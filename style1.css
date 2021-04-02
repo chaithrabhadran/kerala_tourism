@@ -1,0 +1,133 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 10vh;
+    width:100%;
+    background: transparent;
+    /* background-color: rgba(43, 52, 77, 0.514); */
+    /* background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url("tisza-785737_1920.jpg"); */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    /* padding-left: 20px; */
+    /* text-align: justify; */
+ } 
+ .navlinks{
+    flex: 1;
+    text-align: right;
+
+ }
+ .navlinks ul li{
+     list-style: none;
+     display: inline-block;
+     padding: 8px 12px;
+     position: relative;
+ }
+ .navlinks ul li::after{
+     content: '';
+     width: 0%;
+     height: 2px;
+     background:whitesmoke ;
+     display: block;
+     margin: auto;
+     transition: 0.5s;
+ }
+ .navlinks ul li:hover::after{
+     width: 100%;
+ }
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url("imageonline-co-blurimage\ \(1\).jpg");
+    background-size: cover;
+}
+
+.box{
+    width: 278px;
+    position: absolute;
+    border-radius: 20%;
+    
+    padding:50px 0 50px;
+    padding: 50px;
+     top: 20%; 
+    left: 37%;
+    transform: translate(-50% -50%);
+    color: #ffebcd;
+     background-color: rgba(47, 42, 73, 0.637)
+}
+.box h1{
+    float: left;
+    margin-left: 75px;
+    font-size: 40px;
+    border-bottom: 6px solid rgba(192, 178, 178, 0.616);
+    padding: 13px 0;
+    /* background-color: black; */
+    margin-bottom: 50px;
+
+}
+/* .text1{
+    background-color: black;
+    padding:40px; */
+/* } */
+.textbox{
+    padding: 8px 0;
+    margin: 8px 0;
+    /* background-color: black; */
+    width: 100%;
+    margin-bottom: 50px;
+    font-size: 20px;
+    overflow: hidden;
+    border-bottom: 1px solid whitesmoke;
+}
+.textbox i{
+    float: left;
+    width:26px;
+    text-align: center;
+
+}
+.button{
+    background: none;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    padding: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 12px 0;
+    border-radius: 5%;
+}
+.button:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+::placeholder{
+    color: whitesmoke;
+}
+.textbox input{
+    outline: none;
+    border: none;
+    background: none;
+    column-count: white;
+    font-size: 18px;
+    margin: 0 10px;
+    float: left;
+    
+    width: 80%;
+}
