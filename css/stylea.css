@@ -21,8 +21,7 @@ nav a{
     text-decoration: none;
     color: white;
     font-size: 20px;
-    /* padding-left: 20px; */
-    /* text-align: justify; */
+    
  } 
  .navlinks{
     flex: 1;
@@ -74,9 +73,7 @@ nav a{
  .destcol{
      flex-basis: 30%;
      margin-bottom: 5%;
-     /* background: lightcoral; */
      border-radius: 10px;
-     /* padding:20px 12px; */
      box-sizing: border-box;
  }
  .dest1{
@@ -152,6 +149,5 @@ nav a{
   }
   
   footer p{
-      /* background-color: thistle; */
       margin-left: 40%;
   }

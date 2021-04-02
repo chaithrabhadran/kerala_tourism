@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kerala Tourism-SignUp</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="districts.html" >Districts</a></li>
+                    <li><a href="districts.html">Districts</a></li>
                     <li><a href="login.html">Login</a></li>
                     <li><a href="#" style="color: grey;">SignUp</a></li>
                 </ul>
@@ -27,31 +27,45 @@
     <div class="icon">
         <i class="fa fa-angle-left" aria-hidden="true"></i>
     </div>
-    <!-- <input type="button" value="back"> -->
     <div class="box">
-
-        <div class="box1">
-            <h1>SignUp</h1>
-            <div class="textbox">
-                <i class="fa fa-user" aria-hidden="true"></i>
-                <input type="text" placeholder="Full Name" name="Username" valu>
+        <form id="form" action="#">
+            <div class="box1">
+                <h1>SignUp</h1>
+                <div class="textbox">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input type="text" id="name" placeholder="Full Name" valu>
+                    <i id="inames" class="fa fa-check-circle" style="visibility: hidden;" aria-hidden="true"></i>
+                    <small>Error Message</small>
+                </div>
+                <div class="textbox">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <input type="email" id="email" placeholder="Email id" name="Username" valu>
+                    <i id="iemail" class="fa fa-check-circle" style="visibility: hidden;" aria-hidden="true"></i>
+                    <small>Error Message</small>
+                </div>
+                <div class="textbox">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <input type="phone" id="phone" placeholder="Mobile Number">
+                    <i id="iphone" class="fa fa-check-circle" style="visibility: hidden;" aria-hidden="true"></i>
+                    <small>Error Message</small>
+                </div>
+                <div class="textbox" id="textbox1">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <input type="password" id="pwd" placeholder="Password" name="Password" valu>
+                    <i id="ipwd" class="fa fa-check-circle" style="visibility: hidden;"  aria-hidden="true"></i>
+                    <small id="msg">Error Message</small>
+                </div>
+                <div class="textbox">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <input type="password" id="cpwd" placeholder="Confirm Password" name="Password" valu>
+                    <i id="icpwd" class="fa fa-check-circle" style="visibility: hidden;" aria-hidden="true"></i>
+                    <small>Error Message</small>
+                </div>
+                <input class="button" onclick="resetcolor()" type="button" value="LogIn">
             </div>
-            <div class="textbox">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <input type="email" placeholder="Email id" name="Username" valu>
-            </div>
-            <div class="textbox">
-                <i class="fa fa-lock" aria-hidden="true"></i>
-                <input type="password" placeholder="Password" name="Password" valu>
-            </div>
-            <div class="textbox">
-                <i class="fa fa-lock" aria-hidden="true"></i>
-                <input type="password" placeholder="Repeat Password" name="Password" valu>
-            </div>
-            <input class="button" type="button" value="LogIn">
-        </div>
+        </form>
     </div>
-
+    <script src="/js/sign.js"></script>
 </body>
 
 </html>

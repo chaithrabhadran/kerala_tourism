@@ -7,7 +7,6 @@
     min-height: 10vh;
     width:100%;
     background-color: rgba(42, 53, 87, 0.719);
-    /* background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url("tisza-785737_1920.jpg"); */
     background-position: center;
     background-size: cover;
     position: relative;
@@ -22,8 +21,6 @@ nav a{
     text-decoration: none;
     color: white;
     font-size: 20px;
-    /* padding-left: 20px; */
-    /* text-align: justify; */
  } 
  .navlinks{
     flex: 1;
@@ -80,15 +77,12 @@ nav a{
  .destcol{
      flex-basis: 30%;
      margin-bottom: 5%;
-     /* background: lightcoral; */
      border-radius: 10px;
-     /* padding:20px 12px; */
      box-sizing: border-box;
  }
  .dest{
 
      background-color: rgba(168, 164, 164, 0.253);
-     /* background-image: linear-gradient(rgba(4,9,30,0.7)); */
     width: 85%;
     margin: auto;
     text-align: center;
@@ -149,6 +143,5 @@ footer {
   }
   
   footer p{
-      /* background-color: thistle; */
       margin-left: 40%;
   }
