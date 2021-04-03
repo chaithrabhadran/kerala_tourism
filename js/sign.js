@@ -11,8 +11,12 @@ function validateInput() {
         onError(names, "Name cannot be empty");
     }
     else {
+        if(!isValidName(names.value.trim()))
+        {
+            onError(names, "Enter your name");
+        }else{
         document.getElementById("inames").style.visibility = "visible";
-        onSuccess(names);
+        onSuccess(names);}
     }
 
     if (email.value.trim() === "") {
@@ -168,5 +172,9 @@ function resetcolor(){
     document.getElementById("iphone").style.visibility = "hidden";
     
 
+}
+function isValidName(name)
+{
+return /^[A-Za-z]+([\ A-Za-z]+)*$/.test(name);
 }
 
